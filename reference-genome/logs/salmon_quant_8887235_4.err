@@ -1,0 +1,80 @@
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.2
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { salmon_index }
+### [ libType ] => { A }
+### [ unmatedReads ] => { /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL24_thin-biofilm.fastq }
+### [ threads ] => { 8 }
+### [ validateMappings ] => { }
+### [ output ] => { salmon_quant/S5 }
+Logs will be written to salmon_quant/S5/logs
+[2026-02-19 12:26:59.159] [jointLog] [info] setting maxHashResizeThreads to 8
+[2026-02-19 12:26:59.159] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2026-02-19 12:26:59.159] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2026-02-19 12:26:59.159] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2026-02-19 12:26:59.159] [jointLog] [info] parsing read library format
+[2026-02-19 12:26:59.160] [jointLog] [info] There is 1 library.
+-----------------------------------------
+| Loading contig table | Time = 10.043 ms
+-----------------------------------------
+[2026-02-19 12:26:59.165] [jointLog] [info] Loading pufferfish index
+[2026-02-19 12:26:59.168] [jointLog] [info] Loading dense pufferfish index.
+size = 8019
+-----------------------------------------
+| Loading contig offsets | Time = 3.7111 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 7.8905 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 19.3 ms
+-----------------------------------------
+size = 8187961
+Number of ones: 8018
+Number of ones per inventory item: 512
+Inventory entries filled: 16
+-----------------------------------------
+| Loading contig boundaries | Time = 18.753 ms
+-----------------------------------------
+size = 8187961
+-----------------------------------------
+| Loading sequence | Time = 9.5342 ms
+-----------------------------------------
+size = 7947421
+-----------------------------------------
+| Loading positions | Time = 72.091 ms
+-----------------------------------------
+size = 8214821
+-----------------------------------------
+| Loading reference sequence | Time = 11.036 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 2.0815 ms
+-----------------------------------------
+[2026-02-19 12:26:59.330] [jointLog] [info] done
+[2026-02-19 12:26:59.355] [jointLog] [info] Index contained 5,477 targets
+[2026-02-19 12:26:59.356] [jointLog] [info] Number of decoys : 0
+
+
+
+
+[2026-02-19 12:26:59.503] [jointLog] [info] Automatically detected most likely library type as U
+
+[A[32mprocessed[31m 500,000 [32mfragments[0m
+hits: 203,121; hits per frag:  0.415109[A[32mprocessed[31m 1,000,001 [32mfragments[0m
+hits: 405,944; hits per frag:  0.420432[A[32mprocessed[31m 1,500,000 [32mfragments[0m
+hits: 608,079; hits per frag:  0.408961[A[32mprocessed[31m 2,000,000 [32mfragments[0m
+hits: 810,829; hits per frag:  0.412445[A[32mprocessed[31m 2,500,000 [32mfragments[0m
+hits: 1,013,175; hits per frag:  0.414498[A[32mprocessed[31m 3,000,000 [32mfragments[0m
+hits: 1,214,478; hits per frag:  0.406126[A[32mprocessed[31m 3,500,000 [32mfragments[0m
+hits: 1,417,624; hits per frag:  0.407074[A[32mprocessed[31m 4,000,000 [32mfragments[0m
+hits: 1,620,741; hits per frag:  0.406776[A[32mprocessed[31m 4,500,000 [32mfragments[0m
+hits: 1,823,475; hits per frag:  0.406914[A[32mprocessed[31m 5,000,005 [32mfragments[0m
+hits: 1,882,776; hits per frag:  0.377326[A[32mprocessed[31m 5,500,006 [32mfragments[0m
+hits: 1,882,776; hits per frag:  0.343485[A[32mprocessed[31m 6,000,008 [32mfragments[0m
+hits: 1,882,776; hits per frag:  0.31565[A[32mprocessed[31m 6,500,004 [32mfragments[0m
+hits: 1,882,776; hits per frag:  0.290916[2026-02-19 12:27:03.228] [jointLog] [error] 
+
+
+[2026-02-19 12:27:03.228] [jointLog] [error] Processing reads : Error reading from the FASTA/Q stream. Minimum return code for left and right read was (-2). Make sure the file is valid.

@@ -1,0 +1,109 @@
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.2
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { salmon_index }
+### [ libType ] => { A }
+### [ unmatedReads ] => { /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL30_mature-biofilm.fastq }
+### [ threads ] => { 8 }
+### [ validateMappings ] => { }
+### [ output ] => { salmon_quant/S8 }
+Logs will be written to salmon_quant/S8/logs
+[2026-02-19 13:27:05.472] [jointLog] [info] setting maxHashResizeThreads to 8
+[2026-02-19 13:27:05.472] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2026-02-19 13:27:05.472] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2026-02-19 13:27:05.472] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2026-02-19 13:27:05.472] [jointLog] [info] parsing read library format
+[2026-02-19 13:27:05.472] [jointLog] [info] There is 1 library.
+[2026-02-19 13:27:05.483] [jointLog] [info] Loading pufferfish index
+[2026-02-19 13:27:05.492] [jointLog] [info] Loading dense pufferfish index.
+-----------------------------------------
+| Loading contig table | Time = 54.204 ms
+-----------------------------------------
+size = 8019
+-----------------------------------------
+| Loading contig offsets | Time = 8.7829 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 7.2548 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 21.522 ms
+-----------------------------------------
+size = 8187961
+Number of ones: 8018
+Number of ones per inventory item: 512
+Inventory entries filled: 16
+-----------------------------------------
+| Loading contig boundaries | Time = 25.798 ms
+-----------------------------------------
+size = 8187961
+-----------------------------------------
+| Loading sequence | Time = 21.398 ms
+-----------------------------------------
+size = 7947421
+-----------------------------------------
+| Loading positions | Time = 108.5 ms
+-----------------------------------------
+size = 8214821
+-----------------------------------------
+| Loading reference sequence | Time = 16.593 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 5.0268 ms
+-----------------------------------------
+
+
+
+
+[2026-02-19 13:27:05.777] [jointLog] [info] done
+[2026-02-19 13:27:05.808] [jointLog] [info] Index contained 5,477 targets
+[2026-02-19 13:27:05.808] [jointLog] [info] Number of decoys : 0
+[2026-02-19 13:27:06.118] [jointLog] [info] Automatically detected most likely library type as U
+
+[A[32mprocessed[31m 500,001 [32mfragments[0m
+hits: 159,946; hits per frag:  0.325349[A[32mprocessed[31m 1,000,000 [32mfragments[0m
+hits: 319,200; hits per frag:  0.332264[A[32mprocessed[31m 1,500,000 [32mfragments[0m
+hits: 478,821; hits per frag:  0.321259[A[32mprocessed[31m 2,000,000 [32mfragments[0m
+hits: 638,242; hits per frag:  0.319732[A[32mprocessed[31m 2,500,001 [32mfragments[0m
+hits: 798,106; hits per frag:  0.320463[A[32mprocessed[31m 3,000,000 [32mfragments[0m
+hits: 956,826; hits per frag:  0.322295[A[32mprocessed[31m 3,500,001 [32mfragments[0m
+hits: 1,115,967; hits per frag:  0.321182[A[32mprocessed[31m 4,000,002 [32mfragments[0m
+hits: 1,275,879; hits per frag:  0.321948[A[32mprocessed[31m 4,500,001 [32mfragments[0m
+hits: 1,434,668; hits per frag:  0.320245[A[32mprocessed[31m 5,000,000 [32mfragments[0m
+hits: 1,593,926; hits per frag:  0.319448[A[32mprocessed[31m 5,500,000 [32mfragments[0m
+hits: 1,751,744; hits per frag:  0.319396[A[32mprocessed[31m 6,000,000 [32mfragments[0m
+hits: 1,910,604; hits per frag:  0.320571[A[32mprocessed[31m 6,500,000 [32mfragments[0m
+hits: 2,070,226; hits per frag:  0.318987
+
+
+
+
+
+
+
+[2026-02-19 13:27:14.849] [jointLog] [info] Computed 5,786 rich equivalence classes for further processing
+[2026-02-19 13:27:14.849] [jointLog] [info] Counted 2,148,725 total reads in the equivalence classes 
+[2026-02-19 13:27:14.852] [jointLog] [info] Number of mappings discarded because of alignment score : 58,164
+[2026-02-19 13:27:14.852] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 53,240
+[2026-02-19 13:27:14.852] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2026-02-19 13:27:14.852] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 0
+[2026-02-19 13:27:14.852] [jointLog] [warning] Only 2148725 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2026-02-19 13:27:14.852] [jointLog] [info] Mapping rate = 31.0866%
+
+[2026-02-19 13:27:14.852] [jointLog] [info] finished quantifyLibrary()
+[2026-02-19 13:27:14.887] [jointLog] [info] Starting optimizer
+[2026-02-19 13:27:14.900] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2026-02-19 13:27:14.900] [jointLog] [info] iteration = 0 | max rel diff. = 2251.79
+[2026-02-19 13:27:14.917] [jointLog] [info] iteration = 100 | max rel diff. = 0.4481
+[2026-02-19 13:27:14.933] [jointLog] [info] iteration = 200 | max rel diff. = 0.160405
+[2026-02-19 13:27:14.934] [jointLog] [info] iteration = 209 | max rel diff. = 0.00554164
+[2026-02-19 13:27:14.935] [jointLog] [info] Finished optimizer
+[2026-02-19 13:27:14.935] [jointLog] [info] writing output 
+
+[2026-02-19 13:27:14.962] [jointLog] [warning] NOTE: Read Lib [[ /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL30_mature-biofilm.fastq ]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: salmon_quant/S8/lib_format_counts.json for details
+

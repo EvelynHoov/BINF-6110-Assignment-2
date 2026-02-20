@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.10.2",
+    "index": "salmon_index",
+    "libType": "A",
+    "unmatedReads": "/home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL30_mature-biofilm.fastq",
+    "threads": "8",
+    "validateMappings": [],
+    "output": "salmon_quant/S8",
+    "auxDir": "aux_info"
+}

@@ -1,0 +1,71 @@
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.2
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { salmon_index }
+### [ libType ] => { A }
+### [ unmatedReads ] => { /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL25_thin-biofilm.fastq }
+### [ threads ] => { 8 }
+### [ validateMappings ] => { }
+### [ output ] => { salmon_quant/S6 }
+Logs will be written to salmon_quant/S6/logs
+[2026-02-19 12:26:59.169] [jointLog] [info] setting maxHashResizeThreads to 8
+[2026-02-19 12:26:59.169] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2026-02-19 12:26:59.169] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2026-02-19 12:26:59.169] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2026-02-19 12:26:59.169] [jointLog] [info] parsing read library format
+[2026-02-19 12:26:59.170] [jointLog] [info] There is 1 library.
+[2026-02-19 12:26:59.178] [jointLog] [info] Loading pufferfish index
+[2026-02-19 12:26:59.183] [jointLog] [info] Loading dense pufferfish index.
+-----------------------------------------
+| Loading contig table | Time = 7.6895 ms
+-----------------------------------------
+size = 8019
+-----------------------------------------
+| Loading contig offsets | Time = 4.9612 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 3.3863 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 21.356 ms
+-----------------------------------------
+size = 8187961
+Number of ones: 8018
+Number of ones per inventory item: 512
+Inventory entries filled: 16
+-----------------------------------------
+| Loading contig boundaries | Time = 30.28 ms
+-----------------------------------------
+size = 8187961
+-----------------------------------------
+| Loading sequence | Time = 11.602 ms
+-----------------------------------------
+size = 7947421
+-----------------------------------------
+| Loading positions | Time = 54.516 ms
+-----------------------------------------
+size = 8214821
+-----------------------------------------
+| Loading reference sequence | Time = 8.3172 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 1.857 ms
+-----------------------------------------
+[2026-02-19 12:26:59.336] [jointLog] [info] done
+[2026-02-19 12:26:59.368] [jointLog] [info] Index contained 5,477 targets
+[2026-02-19 12:26:59.369] [jointLog] [info] Number of decoys : 0
+
+
+
+
+[2026-02-19 12:26:59.522] [jointLog] [info] Automatically detected most likely library type as U
+
+[A[32mprocessed[31m 500,001 [32mfragments[0m
+hits: 226,922; hits per frag:  0.499614[A[32mprocessed[31m 1,000,000 [32mfragments[0m
+hits: 453,796; hits per frag:  0.486696[A[32mprocessed[31m 1,500,002 [32mfragments[0m
+hits: 680,877; hits per frag:  0.456786[A[32mprocessed[31m 2,000,010 [32mfragments[0m
+hits: 840,390; hits per frag:  0.426493[2026-02-19 12:27:01.094] [jointLog] [error] 
+
+
+[2026-02-19 12:27:01.094] [jointLog] [error] Processing reads : Error reading from the FASTA/Q stream. Minimum return code for left and right read was (-2). Make sure the file is valid.

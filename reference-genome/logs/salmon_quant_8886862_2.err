@@ -1,0 +1,63 @@
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.2
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { salmon_index }
+### [ libType ] => { A }
+### [ unmatedReads ] => { /home/~/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL22_early-biofilm.fastq }
+### [ threads ] => { 8 }
+### [ validateMappings ] => { }
+### [ output ] => { salmon_quant/S3 }
+Logs will be written to salmon_quant/S3/logs
+[2026-02-19 12:14:24.643] [jointLog] [info] setting maxHashResizeThreads to 8
+[2026-02-19 12:14:24.643] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2026-02-19 12:14:24.643] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2026-02-19 12:14:24.643] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2026-02-19 12:14:24.643] [jointLog] [info] parsing read library format
+[2026-02-19 12:14:24.644] [jointLog] [info] There is 1 library.
+[2026-02-19 12:14:24.659] [jointLog] [info] Loading pufferfish index
+[2026-02-19 12:14:24.667] [jointLog] [info] Loading dense pufferfish index.
+-----------------------------------------
+| Loading contig table | Time = 59.243 ms
+-----------------------------------------
+size = 8019
+-----------------------------------------
+| Loading contig offsets | Time = 4.8807 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 4.4336 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 24.031 ms
+-----------------------------------------
+size = 8187961
+Number of ones: 8018
+Number of ones per inventory item: 512
+Inventory entries filled: 16
+-----------------------------------------
+| Loading contig boundaries | Time = 28.679 ms
+-----------------------------------------
+size = 8187961
+-----------------------------------------
+| Loading sequence | Time = 14.548 ms
+-----------------------------------------
+size = 7947421
+-----------------------------------------
+| Loading positions | Time = 78.567 ms
+-----------------------------------------
+size = 8214821
+-----------------------------------------
+| Loading reference sequence | Time = 11.442 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 4.1428 ms
+-----------------------------------------
+Exception : [
+The following errors were detected with the read files
+======================================================
+ERROR: file [/home/~/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL22_early-biofilm.fastq] does not appear to exist!
+
+]
+salmon quant was invoked improperly.
+For usage information, try salmon quant --help
+Exiting.
