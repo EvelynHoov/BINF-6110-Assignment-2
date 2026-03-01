@@ -1,7 +1,8 @@
 # BINF-6110-Assignment-2
 Bulk transcriptomics of a yeast biofilm at different points of wine aging.  
 ## Introduction  
-- S. cervisiae is used in wine aging for sherry-like wines.
+  The versitility of sherry-like wines allows them to be used in cooking or enjoyed on their own through drink. When brewing sherry-like wines, _Saccharomyces cerevisiae_ play an important role in 
+-  S. cervisiae is used in wine aging for sherry-like wines.
 - forms velum on the surface of the wine which helps the yeast cells withstand harsh conditions involved in wine making
 - want to understand how the transcriptome of these cells changes over time as the velum biofilm matures and different aspects of the genome need to be expressed to adjust to conditions
 - goal of this assignment is to evaluate differential expressions and functional differences of the transcriptomes at different timepoints of velum biofilm development
