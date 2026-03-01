@@ -91,13 +91,17 @@ top20_genes <- rownames(res_ordered)[1:20]
 vsd <- vst(dds, blind = FALSE)      
 mat <- assay(vsd)[top20_genes, ]        
 mat <- mat - rowMeans(mat)
-annotation_col <- as.data.frame(colData(dds)[, "condition", drop = FALSE])
+
+# Reorder columns of the matrix and annotation
+sample_order <- order(annotation_col$Condition)
+mat <- mat[, sample_order]
+annotation_col <- annotation_col[sample_order, , drop = FALSE])
 colnames(annotation_col) <- "Condition"
 pheatmap(
   mat,
   annotation_col = annotation_col,
   cluster_rows   = TRUE,
-  cluster_cols   = TRUE,
+  cluster_cols   = FALSE,
   show_rownames  = TRUE,
   show_colnames  = TRUE,
   scale          = "none",         
