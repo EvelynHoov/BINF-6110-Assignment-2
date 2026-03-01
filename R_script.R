@@ -55,18 +55,11 @@ res <- res[!is.na(res$padj), ]
 res_ordered <- res[order(res$padj), ]
 # Top 20 genes by adjusted p-value
 top20_genes <- rownames(res_ordered)[1:20]
-## 3. Transform counts (VST or rlog) for visualization
-vsd <- vst(dds, blind = FALSE)          # or rld <- rlog(dds, blind = FALSE)
-mat <- assay(vsd)[top20_genes, ]        # expression matrix for top 20
-# Optionally center genes (rows) for better contrast
+vsd <- vst(dds, blind = FALSE)         
+mat <- assay(vsd)[top20_genes, ]        
 mat <- mat - rowMeans(mat)
-
-## 4. Sample annotations (optional)
-# Use a column from colData(dds), e.g. 'condition'
 annotation_col <- as.data.frame(colData(dds)[, "condition", drop = FALSE])
 colnames(annotation_col) <- "Condition"
-
-## 5. Draw heatmap
 pheatmap(
   mat,
   annotation_col = annotation_col,
@@ -74,11 +67,10 @@ pheatmap(
   cluster_cols   = TRUE,
   show_rownames  = TRUE,
   show_colnames  = TRUE,
-  scale          = "none",          # already centered above
-  fontsize_row   = 8,               # adjust label sizes as you like
+  scale          = "none",          
+  fontsize_row   = 8,               
   fontsize_col   = 8,
-  color          = colorRampPalette(c("navy", "white", "firebrick3"))(50)
-)
+  color          = colorRampPalette(c("navy", "white", "firebrick3"))(50))
 plotMA(res_mature_vs_early, ylim = c(-2, 2))
 plotMA(res_thin_vs_early, ylim = c(-2, 2))
 plotMA(res_mature_vs_thin, ylim = c(-2, 2))
@@ -91,8 +83,6 @@ top20_genes <- rownames(res_ordered)[1:20]
 vsd <- vst(dds, blind = FALSE)      
 mat <- assay(vsd)[top20_genes, ]        
 mat <- mat - rowMeans(mat)
-
-# Reorder columns of the matrix and annotation
 sample_order <- order(annotation_col$Condition)
 mat <- mat[, sample_order]
 annotation_col <- annotation_col[sample_order, , drop = FALSE])
@@ -130,12 +120,12 @@ sig_genes_clean <- sig_genes[!is.na(sig_genes)]
 mapped <- AnnotationDbi::select(
   org.Sc.sgd.db,
   keys = sig_genes_clean,
-  keytype = "GENENAME",     # or "ALIAS" if some fail
+  keytype = "GENENAME",    
   columns = c("ENTREZID", "ORF"))
 sig_entrez <- mapped$ENTREZID[!is.na(mapped$ENTREZID)]
 library(org.Sc.sgd.db)
 library(AnnotationDbi)
-geneList <- res$stat        # or res$log2FoldChange
+geneList <- res$stat       
 names(geneList) <- rownames(res)
 geneList <- sort(geneList, decreasing = TRUE)
 geneList <- geneList[!is.na(geneList)]
@@ -154,4 +144,5 @@ dim(gsea_result@result)
 head(gsea_result@result)
 dotplot(gsea_result,
         showCategory = 20,
+
         font.size   = 5)
