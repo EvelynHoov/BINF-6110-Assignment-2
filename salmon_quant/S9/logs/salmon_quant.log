@@ -1,43 +1,36 @@
-[2026-02-19 13:27:05.469] [jointLog] [info] setting maxHashResizeThreads to 8
-[2026-02-19 13:27:05.469] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
-[2026-02-19 13:27:05.469] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
-[2026-02-19 13:27:05.470] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
-[2026-02-19 13:27:05.470] [jointLog] [info] parsing read library format
-[2026-02-19 13:27:05.470] [jointLog] [info] There is 1 library.
-[2026-02-19 13:27:05.483] [jointLog] [info] Loading pufferfish index
-[2026-02-19 13:27:05.490] [jointLog] [info] Loading dense pufferfish index.
-[2026-02-19 13:27:05.793] [jointLog] [info] done
-[2026-02-19 13:27:05.817] [jointLog] [info] Index contained 5,477 targets
-[2026-02-19 13:27:05.818] [jointLog] [info] Number of decoys : 0
-[2026-02-19 13:27:06.072] [jointLog] [info] Automatically detected most likely library type as U
+[2026-02-28 14:02:32.939] [jointLog] [info] setting maxHashResizeThreads to 8
+[2026-02-28 14:02:32.939] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2026-02-28 14:02:32.939] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2026-02-28 14:02:32.939] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2026-02-28 14:02:32.939] [jointLog] [info] parsing read library format
+[2026-02-28 14:02:32.939] [jointLog] [info] There is 1 library.
+[2026-02-28 14:02:32.940] [jointLog] [info] Loading pufferfish index
+[2026-02-28 14:02:32.941] [jointLog] [info] Loading dense pufferfish index.
+[2026-02-28 14:02:33.048] [jointLog] [info] done
+[2026-02-28 14:02:33.073] [jointLog] [info] Index contained 6,681 targets
+[2026-02-28 14:02:33.074] [jointLog] [info] Number of decoys : 0
+[2026-02-28 14:02:33.134] [jointLog] [info] Automatically detected most likely library type as U
 
-[2026-02-19 13:27:17.259] [jointLog] [info] Computed 5,800 rich equivalence classes for further processing
-[2026-02-19 13:27:17.259] [jointLog] [info] Counted 2,840,216 total reads in the equivalence classes 
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of mappings discarded because of alignment score : 75,750
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 68,641
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 0
-[2026-02-19 13:27:17.262] [jointLog] [warning] Only 2840216 fragments were mapped, but the number of burn-in fragments was set to 5000000.
-The effective lengths have been computed using the observed mappings.
-
-[2026-02-19 13:27:17.262] [jointLog] [info] Mapping rate = 31.4501%
-
-[2026-02-19 13:27:17.262] [jointLog] [info] finished quantifyLibrary()
-[2026-02-19 13:27:17.286] [jointLog] [info] Starting optimizer
-[2026-02-19 13:27:17.303] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
-[2026-02-19 13:27:17.304] [jointLog] [info] iteration = 0 | max rel diff. = 2857.77
-[2026-02-19 13:27:17.319] [jointLog] [info] iteration = 100 | max rel diff. = 0.0507709
-[2026-02-19 13:27:17.334] [jointLog] [info] iteration = 200 | max rel diff. = 0.103323
-[2026-02-19 13:27:17.347] [jointLog] [info] iteration = 288 | max rel diff. = 0.00949037
-[2026-02-19 13:27:17.347] [jointLog] [info] Finished optimizer
-[2026-02-19 13:27:17.347] [jointLog] [info] writing output 
-
-[2026-02-19 13:27:17.394] [jointLog] [warning] NOTE: Read Lib [[ /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL31_mature-biofilm.fastq ]] :
-
-Detected a *potential* strand bias > 1% in an unstranded protocol check the file: salmon_quant/S9/lib_format_counts.json for details
-
-[2026-02-19 13:27:17.259] [fileLog] [info] 
+[2026-02-28 14:02:38.115] [fileLog] [info] 
 At end of round 0
 ==================
 Observed 9030851 total fragments (9030851 in most recent round)
+
+[2026-02-28 14:02:38.115] [jointLog] [info] Computed 8,214 rich equivalence classes for further processing
+[2026-02-28 14:02:38.115] [jointLog] [info] Counted 7,536,238 total reads in the equivalence classes 
+[2026-02-28 14:02:38.118] [jointLog] [info] Number of mappings discarded because of alignment score : 451,382
+[2026-02-28 14:02:38.118] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 133,095
+[2026-02-28 14:02:38.118] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2026-02-28 14:02:38.118] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 0
+[2026-02-28 14:02:38.118] [jointLog] [info] Mapping rate = 83.4499%
+
+[2026-02-28 14:02:38.118] [jointLog] [info] finished quantifyLibrary()
+[2026-02-28 14:02:38.124] [jointLog] [info] Starting optimizer
+[2026-02-28 14:02:38.135] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2026-02-28 14:02:38.135] [jointLog] [info] iteration = 0 | max rel diff. = 63257.2
+[2026-02-28 14:02:38.160] [jointLog] [info] iteration = 100 | max rel diff. = 0.0745432
+[2026-02-28 14:02:38.184] [jointLog] [info] iteration = 200 | max rel diff. = 0.159877
+[2026-02-28 14:02:38.209] [jointLog] [info] iteration = 298 | max rel diff. = 0.00217689
+[2026-02-28 14:02:38.209] [jointLog] [info] Finished optimizer
+[2026-02-28 14:02:38.209] [jointLog] [info] writing output 
 
