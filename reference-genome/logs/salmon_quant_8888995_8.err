@@ -1,114 +1,0 @@
-Version Server Response: Not Found
-### salmon (selective-alignment-based) v1.10.2
-### [ program ] => salmon 
-### [ command ] => quant 
-### [ index ] => { salmon_index }
-### [ libType ] => { A }
-### [ unmatedReads ] => { /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL31_mature-biofilm.fastq }
-### [ threads ] => { 8 }
-### [ validateMappings ] => { }
-### [ output ] => { salmon_quant/S9 }
-Logs will be written to salmon_quant/S9/logs
-[2026-02-19 13:27:05.469] [jointLog] [info] setting maxHashResizeThreads to 8
-[2026-02-19 13:27:05.469] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
-[2026-02-19 13:27:05.469] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
-[2026-02-19 13:27:05.470] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
-[2026-02-19 13:27:05.470] [jointLog] [info] parsing read library format
-[2026-02-19 13:27:05.470] [jointLog] [info] There is 1 library.
-[2026-02-19 13:27:05.483] [jointLog] [info] Loading pufferfish index
-[2026-02-19 13:27:05.490] [jointLog] [info] Loading dense pufferfish index.
------------------------------------------
-| Loading contig table | Time = 21.685 ms
------------------------------------------
-size = 8019
------------------------------------------
-| Loading contig offsets | Time = 5.4985 ms
------------------------------------------
------------------------------------------
-| Loading reference lengths | Time = 5.599 ms
------------------------------------------
------------------------------------------
-| Loading mphf table | Time = 40.237 ms
------------------------------------------
-size = 8187961
-Number of ones: 8018
-Number of ones per inventory item: 512
-Inventory entries filled: 16
------------------------------------------
-| Loading contig boundaries | Time = 73.406 ms
------------------------------------------
-size = 8187961
------------------------------------------
-| Loading sequence | Time = 16.735 ms
------------------------------------------
-size = 7947421
------------------------------------------
-| Loading positions | Time = 97.549 ms
------------------------------------------
-size = 8214821
------------------------------------------
-| Loading reference sequence | Time = 11.676 ms
------------------------------------------
------------------------------------------
-| Loading reference accumulative lengths | Time = 2.7725 ms
------------------------------------------
-
-
-
-
-[2026-02-19 13:27:05.793] [jointLog] [info] done
-[2026-02-19 13:27:05.817] [jointLog] [info] Index contained 5,477 targets
-[2026-02-19 13:27:05.818] [jointLog] [info] Number of decoys : 0
-[2026-02-19 13:27:06.072] [jointLog] [info] Automatically detected most likely library type as U
-
-[A[32mprocessed[31m 500,000 [32mfragments[0m
-hits: 162,729; hits per frag:  0.335369[A[32mprocessed[31m 1,000,000 [32mfragments[0m
-hits: 324,156; hits per frag:  0.328873[A[32mprocessed[31m 1,500,000 [32mfragments[0m
-hits: 486,396; hits per frag:  0.336606[A[32mprocessed[31m 2,000,000 [32mfragments[0m
-hits: 648,815; hits per frag:  0.334416[A[32mprocessed[31m 2,500,000 [32mfragments[0m
-hits: 810,394; hits per frag:  0.331989[A[32mprocessed[31m 3,000,000 [32mfragments[0m
-hits: 973,243; hits per frag:  0.328244[A[32mprocessed[31m 3,500,001 [32mfragments[0m
-hits: 1,133,551; hits per frag:  0.327832[A[32mprocessed[31m 4,000,000 [32mfragments[0m
-hits: 1,294,956; hits per frag:  0.325347[A[32mprocessed[31m 4,500,000 [32mfragments[0m
-hits: 1,456,596; hits per frag:  0.324403[A[32mprocessed[31m 5,000,000 [32mfragments[0m
-hits: 1,618,862; hits per frag:  0.329987[A[32mprocessed[31m 5,500,001 [32mfragments[0m
-hits: 1,780,244; hits per frag:  0.325456[A[32mprocessed[31m 6,000,001 [32mfragments[0m
-hits: 1,941,356; hits per frag:  0.330403[A[32mprocessed[31m 6,500,000 [32mfragments[0m
-hits: 2,103,233; hits per frag:  0.324547[A[32mprocessed[31m 7,000,000 [32mfragments[0m
-hits: 2,263,464; hits per frag:  0.326383[A[32mprocessed[31m 7,500,001 [32mfragments[0m
-hits: 2,423,259; hits per frag:  0.324387[A[32mprocessed[31m 8,000,000 [32mfragments[0m
-hits: 2,584,936; hits per frag:  0.324295[A[32mprocessed[31m 8,500,000 [32mfragments[0m
-hits: 2,747,139; hits per frag:  0.323573[A[32mprocessed[31m 9,000,000 [32mfragments[0m
-hits: 2,908,596; hits per frag:  0.323508
-
-
-
-
-
-
-
-[2026-02-19 13:27:17.259] [jointLog] [info] Computed 5,800 rich equivalence classes for further processing
-[2026-02-19 13:27:17.259] [jointLog] [info] Counted 2,840,216 total reads in the equivalence classes 
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of mappings discarded because of alignment score : 75,750
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 68,641
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
-[2026-02-19 13:27:17.262] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 0
-[2026-02-19 13:27:17.262] [jointLog] [warning] Only 2840216 fragments were mapped, but the number of burn-in fragments was set to 5000000.
-The effective lengths have been computed using the observed mappings.
-
-[2026-02-19 13:27:17.262] [jointLog] [info] Mapping rate = 31.4501%
-
-[2026-02-19 13:27:17.262] [jointLog] [info] finished quantifyLibrary()
-[2026-02-19 13:27:17.286] [jointLog] [info] Starting optimizer
-[2026-02-19 13:27:17.303] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
-[2026-02-19 13:27:17.304] [jointLog] [info] iteration = 0 | max rel diff. = 2857.77
-[2026-02-19 13:27:17.319] [jointLog] [info] iteration = 100 | max rel diff. = 0.0507709
-[2026-02-19 13:27:17.334] [jointLog] [info] iteration = 200 | max rel diff. = 0.103323
-[2026-02-19 13:27:17.347] [jointLog] [info] iteration = 288 | max rel diff. = 0.00949037
-[2026-02-19 13:27:17.347] [jointLog] [info] Finished optimizer
-[2026-02-19 13:27:17.347] [jointLog] [info] writing output 
-
-[2026-02-19 13:27:17.394] [jointLog] [warning] NOTE: Read Lib [[ /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL31_mature-biofilm.fastq ]] :
-
-Detected a *potential* strand bias > 1% in an unstranded protocol check the file: salmon_quant/S9/lib_format_counts.json for details
-

@@ -1,109 +1,0 @@
-Version Server Response: Not Found
-### salmon (selective-alignment-based) v1.10.2
-### [ program ] => salmon 
-### [ command ] => quant 
-### [ index ] => { salmon_index }
-### [ libType ] => { A }
-### [ unmatedReads ] => { /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL30_mature-biofilm.fastq }
-### [ threads ] => { 8 }
-### [ validateMappings ] => { }
-### [ output ] => { salmon_quant/S8 }
-Logs will be written to salmon_quant/S8/logs
-[2026-02-19 12:26:59.154] [jointLog] [info] setting maxHashResizeThreads to 8
-[2026-02-19 12:26:59.154] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
-[2026-02-19 12:26:59.154] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
-[2026-02-19 12:26:59.154] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
-[2026-02-19 12:26:59.155] [jointLog] [info] parsing read library format
-[2026-02-19 12:26:59.155] [jointLog] [info] There is 1 library.
------------------------------------------
-| Loading contig table | Time = 888.06 us
------------------------------------------
-size = 8019
------------------------------------------
-| Loading contig offsets | Time = 575.07 us
------------------------------------------
------------------------------------------
-| Loading reference lengths | Time = 7.423 us
------------------------------------------
------------------------------------------
-| Loading mphf table | Time = 1.9657 ms
------------------------------------------
-size = 8187961
-Number of ones: 8018
-Number of ones per inventory item: 512
-Inventory entries filled: 16
------------------------------------------
-| Loading contig boundaries | Time = 9.7568 ms
------------------------------------------
-size = 8187961
------------------------------------------
-| Loading sequence | Time = 1.6449 ms
------------------------------------------
-size = 7947421
-[2026-02-19 12:26:59.156] [jointLog] [info] Loading pufferfish index
-[2026-02-19 12:26:59.157] [jointLog] [info] Loading dense pufferfish index.
------------------------------------------
-| Loading positions | Time = 11.957 ms
------------------------------------------
-size = 8214821
------------------------------------------
-| Loading reference sequence | Time = 1.5169 ms
------------------------------------------
------------------------------------------
-| Loading reference accumulative lengths | Time = 15.365 us
------------------------------------------
-[2026-02-19 12:26:59.187] [jointLog] [info] done
-[2026-02-19 12:26:59.213] [jointLog] [info] Index contained 5,477 targets
-[2026-02-19 12:26:59.213] [jointLog] [info] Number of decoys : 0
-
-
-
-
-[2026-02-19 12:26:59.391] [jointLog] [info] Automatically detected most likely library type as U
-
-[A[32mprocessed[31m 500,000 [32mfragments[0m
-hits: 159,974; hits per frag:  0.356988[A[32mprocessed[31m 1,000,001 [32mfragments[0m
-hits: 319,183; hits per frag:  0.32587[A[32mprocessed[31m 1,500,000 [32mfragments[0m
-hits: 478,827; hits per frag:  0.32855[A[32mprocessed[31m 2,000,000 [32mfragments[0m
-hits: 638,239; hits per frag:  0.321133[A[32mprocessed[31m 2,500,001 [32mfragments[0m
-hits: 798,105; hits per frag:  0.320806[A[32mprocessed[31m 3,000,000 [32mfragments[0m
-hits: 956,917; hits per frag:  0.32027[A[32mprocessed[31m 3,500,000 [32mfragments[0m
-hits: 1,115,975; hits per frag:  0.32087[A[32mprocessed[31m 4,000,000 [32mfragments[0m
-hits: 1,275,882; hits per frag:  0.320797[A[32mprocessed[31m 4,500,000 [32mfragments[0m
-hits: 1,434,699; hits per frag:  0.319746[A[32mprocessed[31m 5,000,000 [32mfragments[0m
-hits: 1,593,924; hits per frag:  0.319831[A[32mprocessed[31m 5,500,000 [32mfragments[0m
-hits: 1,751,735; hits per frag:  0.320485[A[32mprocessed[31m 6,000,001 [32mfragments[0m
-hits: 1,910,605; hits per frag:  0.319293[A[32mprocessed[31m 6,500,000 [32mfragments[0m
-hits: 2,070,221; hits per frag:  0.319804
-
-
-
-
-
-
-
-[2026-02-19 12:27:04.329] [jointLog] [info] Computed 5,786 rich equivalence classes for further processing
-[2026-02-19 12:27:04.329] [jointLog] [info] Counted 2,148,725 total reads in the equivalence classes 
-[2026-02-19 12:27:04.332] [jointLog] [info] Number of mappings discarded because of alignment score : 58,164
-[2026-02-19 12:27:04.332] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 53,240
-[2026-02-19 12:27:04.332] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
-[2026-02-19 12:27:04.332] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 0
-[2026-02-19 12:27:04.332] [jointLog] [warning] Only 2148725 fragments were mapped, but the number of burn-in fragments was set to 5000000.
-The effective lengths have been computed using the observed mappings.
-
-[2026-02-19 12:27:04.332] [jointLog] [info] Mapping rate = 31.0866%
-
-[2026-02-19 12:27:04.332] [jointLog] [info] finished quantifyLibrary()
-[2026-02-19 12:27:04.337] [jointLog] [info] Starting optimizer
-[2026-02-19 12:27:04.348] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
-[2026-02-19 12:27:04.349] [jointLog] [info] iteration = 0 | max rel diff. = 2251.79
-[2026-02-19 12:27:04.365] [jointLog] [info] iteration = 100 | max rel diff. = 0.448102
-[2026-02-19 12:27:04.382] [jointLog] [info] iteration = 200 | max rel diff. = 0.160403
-[2026-02-19 12:27:04.383] [jointLog] [info] iteration = 209 | max rel diff. = 0.00554164
-[2026-02-19 12:27:04.383] [jointLog] [info] Finished optimizer
-[2026-02-19 12:27:04.383] [jointLog] [info] writing output 
-
-[2026-02-19 12:27:04.402] [jointLog] [warning] NOTE: Read Lib [[ /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL30_mature-biofilm.fastq ]] :
-
-Detected a *potential* strand bias > 1% in an unstranded protocol check the file: salmon_quant/S8/lib_format_counts.json for details
-

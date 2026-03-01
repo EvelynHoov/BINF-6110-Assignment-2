@@ -1,108 +1,0 @@
-Version Server Response: Not Found
-### salmon (selective-alignment-based) v1.10.2
-### [ program ] => salmon 
-### [ command ] => quant 
-### [ index ] => { salmon_index }
-### [ libType ] => { A }
-### [ unmatedReads ] => { /home/ehoover/projects/def-heylanda/ehoover/BINF-6110-Assignment-2/raw-reads/IL20_early-biofilm.fastq }
-### [ threads ] => { 8 }
-### [ validateMappings ] => { }
-### [ output ] => { salmon_quant/S1 }
-Logs will be written to salmon_quant/S1/logs
-[2026-02-19 13:27:05.462] [jointLog] [info] setting maxHashResizeThreads to 8
-[2026-02-19 13:27:05.462] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
-[2026-02-19 13:27:05.462] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
-[2026-02-19 13:27:05.462] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
-[2026-02-19 13:27:05.462] [jointLog] [info] parsing read library format
-[2026-02-19 13:27:05.463] [jointLog] [info] There is 1 library.
-[2026-02-19 13:27:05.481] [jointLog] [info] Loading pufferfish index
-[2026-02-19 13:27:05.490] [jointLog] [info] Loading dense pufferfish index.
------------------------------------------
-| Loading contig table | Time = 60.057 ms
------------------------------------------
-size = 8019
------------------------------------------
-| Loading contig offsets | Time = 5.6941 ms
------------------------------------------
------------------------------------------
-| Loading reference lengths | Time = 22.467 ms
------------------------------------------
------------------------------------------
-| Loading mphf table | Time = 22.972 ms
------------------------------------------
-size = 8187961
-Number of ones: 8018
-Number of ones per inventory item: 512
-Inventory entries filled: 16
------------------------------------------
-| Loading contig boundaries | Time = 36.832 ms
------------------------------------------
-size = 8187961
------------------------------------------
-| Loading sequence | Time = 14.825 ms
------------------------------------------
-size = 7947421
------------------------------------------
-| Loading positions | Time = 53.606 ms
------------------------------------------
-size = 8214821
------------------------------------------
-| Loading reference sequence | Time = 26.973 ms
------------------------------------------
------------------------------------------
-| Loading reference accumulative lengths | Time = 5.4235 ms
------------------------------------------
-
-
-
-
-[2026-02-19 13:27:05.756] [jointLog] [info] done
-[2026-02-19 13:27:05.786] [jointLog] [info] Index contained 5,477 targets
-[2026-02-19 13:27:05.786] [jointLog] [info] Number of decoys : 0
-[2026-02-19 13:27:06.011] [jointLog] [info] Automatically detected most likely library type as U
-
-[A[32mprocessed[31m 500,000 [32mfragments[0m
-hits: 222,014; hits per frag:  0.51553[A[32mprocessed[31m 1,000,000 [32mfragments[0m
-hits: 442,564; hits per frag:  0.468171[A[32mprocessed[31m 1,500,000 [32mfragments[0m
-hits: 663,387; hits per frag:  0.450966[A[32mprocessed[31m 2,000,000 [32mfragments[0m
-hits: 884,945; hits per frag:  0.444696[A[32mprocessed[31m 2,500,000 [32mfragments[0m
-hits: 1,105,557; hits per frag:  0.44669[A[32mprocessed[31m 3,000,000 [32mfragments[0m
-hits: 1,352,857; hits per frag:  0.452404[A[32mprocessed[31m 3,500,000 [32mfragments[0m
-hits: 1,547,636; hits per frag:  0.447727[A[32mprocessed[31m 4,000,000 [32mfragments[0m
-hits: 1,769,223; hits per frag:  0.446759[A[32mprocessed[31m 4,500,000 [32mfragments[0m
-hits: 1,991,653; hits per frag:  0.444023[A[32mprocessed[31m 5,000,000 [32mfragments[0m
-hits: 2,214,355; hits per frag:  0.443747[A[32mprocessed[31m 5,500,000 [32mfragments[0m
-hits: 2,436,830; hits per frag:  0.443463[A[32mprocessed[31m 6,000,000 [32mfragments[0m
-hits: 2,658,835; hits per frag:  0.451032[A[32mprocessed[31m 6,500,000 [32mfragments[0m
-hits: 2,879,837; hits per frag:  0.445106[A[32mprocessed[31m 7,000,000 [32mfragments[0m
-hits: 3,116,921; hits per frag:  0.447191[A[32mprocessed[31m 7,500,000 [32mfragments[0m
-hits: 3,318,795; hits per frag:  0.442801
-
-
-
-
-
-
-
-[2026-02-19 13:27:17.098] [jointLog] [info] Computed 5,817 rich equivalence classes for further processing
-[2026-02-19 13:27:17.098] [jointLog] [info] Counted 3,144,745 total reads in the equivalence classes 
-[2026-02-19 13:27:17.101] [jointLog] [info] Number of mappings discarded because of alignment score : 47,448
-[2026-02-19 13:27:17.101] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 40,569
-[2026-02-19 13:27:17.101] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
-[2026-02-19 13:27:17.101] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 0
-[2026-02-19 13:27:17.101] [jointLog] [warning] Only 3144745 fragments were mapped, but the number of burn-in fragments was set to 5000000.
-The effective lengths have been computed using the observed mappings.
-
-[2026-02-19 13:27:17.101] [jointLog] [info] Mapping rate = 41.7737%
-
-[2026-02-19 13:27:17.101] [jointLog] [info] finished quantifyLibrary()
-[2026-02-19 13:27:17.149] [jointLog] [info] Starting optimizer
-[2026-02-19 13:27:17.162] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
-[2026-02-19 13:27:17.162] [jointLog] [info] iteration = 0 | max rel diff. = 4303.55
-[2026-02-19 13:27:17.182] [jointLog] [info] iteration = 100 | max rel diff. = 0.0393337
-[2026-02-19 13:27:17.198] [jointLog] [info] iteration = 200 | max rel diff. = 0.0208297
-[2026-02-19 13:27:17.212] [jointLog] [info] iteration = 300 | max rel diff. = 0.0478217
-[2026-02-19 13:27:17.215] [jointLog] [info] iteration = 326 | max rel diff. = 0.00312744
-[2026-02-19 13:27:17.215] [jointLog] [info] Finished optimizer
-[2026-02-19 13:27:17.215] [jointLog] [info] writing output 
-
