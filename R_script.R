@@ -121,4 +121,6 @@ gsea_result <- gseGO(
 class(gsea_result)
 dim(gsea_result@result)
 head(gsea_result@result)
-dotplot(gsea_result, showCategory = 20)
+dotplot(gsea_result,
+        showCategory = 20,
+        font.size   = 5)   # smaller than default 8
