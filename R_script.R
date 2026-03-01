@@ -1,5 +1,4 @@
 #loading in items
-library(DESeq2)
 library(readr)
 library(readxl)
 metadata <- read_tsv("samples.tsv")
@@ -51,32 +50,60 @@ library(ggplot2)
 library(dplyr)
 library(pheatmap)
 library(RColorBrewer)
+# Remove genes with NA padj and order by significance
+res <- res[!is.na(res$padj), ]
+res_ordered <- res[order(res$padj), ]
+# Top 20 genes by adjusted p-value
+top20_genes <- rownames(res_ordered)[1:20]
+## 3. Transform counts (VST or rlog) for visualization
+vsd <- vst(dds, blind = FALSE)          # or rld <- rlog(dds, blind = FALSE)
+mat <- assay(vsd)[top20_genes, ]        # expression matrix for top 20
+# Optionally center genes (rows) for better contrast
+mat <- mat - rowMeans(mat)
+
+## 4. Sample annotations (optional)
+# Use a column from colData(dds), e.g. 'condition'
+annotation_col <- as.data.frame(colData(dds)[, "condition", drop = FALSE])
+colnames(annotation_col) <- "Condition"
+
+## 5. Draw heatmap
+pheatmap(
+  mat,
+  annotation_col = annotation_col,
+  cluster_rows   = TRUE,
+  cluster_cols   = TRUE,
+  show_rownames  = TRUE,
+  show_colnames  = TRUE,
+  scale          = "none",          # already centered above
+  fontsize_row   = 8,               # adjust label sizes as you like
+  fontsize_col   = 8,
+  color          = colorRampPalette(c("navy", "white", "firebrick3"))(50)
+)
 plotMA(res_mature_vs_early, ylim = c(-2, 2))
 plotMA(res_thin_vs_early, ylim = c(-2, 2))
 plotMA(res_mature_vs_thin, ylim = c(-2, 2))
 res_mature_vs_early<-na.omit(res_mature_vs_early)
 res_mature_vs_thin<-na.omit(res_mature_vs_thin)
 res_thin_vs_early<-na.omit(res_thin_vs_early)
-#selecting top 20 genes
-top_genes_mve<-head(order(abs(res_mature_vs_early$padj),decreasing=FALSE),20)
-top_genes_mvt<-head(order(abs(res_mature_vs_thin$padj),decreasing=FALSE),20)
-top_genes_tve<-head(order(abs(res_thin_vs_early$padj),decreasing=FALSE),20)
-top_genes <- top_genes[top_genes %in% rownames(vsd)]
-mat <- assay(vsd)[top_genes, ]
-anno_col <- as.data.frame(colData(dds)[, "condition", drop = FALSE])
-colnames(anno_col)<-" "
+res <- res[!is.na(res$padj), ]
+res_ordered <- res[order(res$padj), ]
+top20_genes <- rownames(res_ordered)[1:20]
+vsd <- vst(dds, blind = FALSE)      
+mat <- assay(vsd)[top20_genes, ]        
+mat <- mat - rowMeans(mat)
+annotation_col <- as.data.frame(colData(dds)[, "condition", drop = FALSE])
+colnames(annotation_col) <- "Condition"
 pheatmap(
   mat,
-  cluster_rows = TRUE,
-  cluster_cols = FALSE,
-  show_rownames = TRUE,
-  show_colnames = TRUE,
-  annotation_col = anno_col,
-  fontsize_row = 8,
-  fontsize_col = 10,
-  main = "Top genes (DESeq2) - VST counts, row-scaled",
-  color = colorRampPalette(c("navy", "white", "firebrick3"))(100),
-  border_color = NA)
+  annotation_col = annotation_col,
+  cluster_rows   = TRUE,
+  cluster_cols   = TRUE,
+  show_rownames  = TRUE,
+  show_colnames  = TRUE,
+  scale          = "none",         
+  fontsize_row   = 8,               
+  fontsize_col   = 8,
+  color          = colorRampPalette(c("navy", "white", "firebrick3"))(50))
 p <- plotPCA(vsd, intgroup = "condition") +
   theme_minimal() +
   ggtitle("PCA - VST counts") +
@@ -123,4 +150,4 @@ dim(gsea_result@result)
 head(gsea_result@result)
 dotplot(gsea_result,
         showCategory = 20,
-        font.size   = 5)   # smaller than default 8
+        font.size   = 5)
